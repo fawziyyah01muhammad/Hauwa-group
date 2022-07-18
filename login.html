@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./css/all.min.css">
+   <link href="https://fonts.googleapis.com/css2? family=poppins:wght@100;200;300;400;600;700display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/style.css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Vitreous herbal soap</title>
+</head>
+<body>
+  <nav>
+    <div class="label">
+    <a href="index.html"><img src="./img/LOGO3-removebg-preview.png" alt=""> VITREOUS</a>
+</div>
+<div class="nav-links">
+    <ul>
+        <div class="nav-links" Id="checkmenu">
+            <i class="fa fa-times" onclick ="hideMenu()"></i>          
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about us.html">ABOUT US</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+            <div class="li2">
+        <li><a  class="active" href="login.html">LOGIN</a></li>
+        <li><a href="register.html">REGISTER</a></li>
+        </div>
+    </ul>
+</div>
+<div class="nav-icons">
+    <a href=""><img src="./img/Vector 7.svg" alt=""></a>
+    <a href="cart.html"><img src="./img/Vector (3).svg" alt="" style=" border:none;"></a>
+</div>
+<i class="fa fa-bars" onclick ="showMenu()"></i>
+</nav>
+
+
+<!-- --------------------------section 1-------------------------------------->
+
+<div class="sign-up">
+  <form action="" class="sign-up-container">
+    <div class="login">
+    <h3>LOG IN</h3>
+    <P>Welcome back! please enter your details</P>
+    <input type="email" name="email" placeholder="Your email address" required><br><br>
+    <input type="password" name="password" placeholder="Password" id="see" required><br>
+    <button type="submit" name="submit">LOGIN</button>
+    <h2>OR</h2>
+    <div class="other">
+    <div class="flex">
+      <img src="./img/logos_google-icon.png" alt="">
+      <h5>Continue with Google</h5>
+    </div>
+    </div>
+    <div class="other">
+    <div class="flex">
+      <img src="./img/icon-park_facebook.png" alt="">
+      <h5>Continue with Facebook</h5>
+    </div>
+    </div>
+    </div>
+  </form>
+</div>
+
+<!-- ----------------foorter-------------- -->
+<div class="sign-footer">
+  <h6>Terms and condition</h6>
+  <h6>Privacy policy</h6>
+  <div class="footer-col2">
+    <p><i class="fa-regular fa-copyright" style="margin: 0px;"></i> 2022 Vitreous beauty cosmetics Limited - All rights reserved.</p>
+    </div>
+</div>
+
+
+  <script src="./js/bootstrap.min.js"></script>
+   
+    <!---------- JavaScript for toggle Menu ------->
+<script>
+	var checkmenu = document.getElementById("checkmenu")  
+	function showMenu(){
+		checkmenu.style.right = "0px";
+	}
+	function hideMenu(){
+		checkmenu.style.right = "-200px";
+	}
+</script>
+</body>
+</html>
