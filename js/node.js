@@ -146,3 +146,43 @@ if(cartItems && productContainer ){
 
 onLoadCartsNumbers();
 displayCart();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 
+
+// if (inputValue === '') {
+//  document.querySelector('#form1').forEach((input) => {
+//         input.addEventListener ('submit', (e) => {
+            
+//         });
+//     })
+
+//   } else {
+//     alert("Your submission was successful!");
+//   }
+
+
+
+
+
+
+
+
+
+
+
