@@ -48,11 +48,16 @@
     <h3>sign up</h3>
     <input type="text" name="username" placeholder="Username" /><br><br>
     <input type="email" name="email" placeholder="Your email address" /><br><br>
-    <input type="password" name="password" placeholder="Password" id="see" /><br>
+    <p style="display: flex;">
+    <input type="password" name="password" placeholder="Password" id="password"/>
+    <i class="fa-regular fa-eye" id="togglePassword"></i>
+    </p>
+    <br>
     <div class="flex">
     <input type="checkbox" /> <p> By signing up you accept the terms of service and privacy policy</p><br>
    </div>
-    <button type="submit" name="submit">create an account</button>
+   <i class="fa-regular fa-eye-slash"></i>
+    <button type="submit" name="submit" class="Submit" onclick="require()">create an account</button>
   </form>
 </div>
 
