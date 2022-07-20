@@ -523,57 +523,131 @@ padding-left: 150px;
 }
 
 /* ------------------About Us-------------------- */
-.about-body{
-    margin: 0 5%;
-}
-.white{
-    background-color:white;
-    padding:120px 60px;
-    text-align: center;
-    position: absolute;
-    top: 150px;
-    left:38%;
-   
+.about{
+    background-color: white;
 }
 .about-row{
     display: flex;
-    margin: 0;
-}
-.container{
-    background: #9A6C6D;
-    padding: 100px 80px;
+    margin:50px 80px;
 }
 .about-col{
     flex-basis: 50%;
+    font-family: 'Fraunces';
 }
 .about-col h2{
-    color: white;
-    font-family: 'Fraunces';
+    color: rgb(29, 27, 27);
     font-weight: 600;
-    font-size: 58px;
+    font-size: 40px;
 }
 .about-col p{
-    color: white;
-    font-family: 'Fraunces';
+    color: rgb(50, 50, 50);
     font-weight: 300;
-    padding: 0px 25px;
+    /* padding: 0px 25px; */
 }
-.about-imgs{
-    display: flex;
-    gap: 10px;
-    padding: 100px 0 0 40px;
+.about-col h5{
+    color: brown;
+    font-size: 30px;
+    padding: 70px 0 0 0;
 }
-.about-imgs-col{
-    flex-basis: 50%;
-}
-.about-imgs img{
-    width: 100px;
-}
-.about-imgs-col p{
-    color: black;
-    font-size: 15px;
+
+.about2{
+    background-color: rgba(181, 127, 127, 0.305);
     text-align: center;
-    padding: 25px 18px 0 0;
+    padding: 30px;
+font-family:'Fraunces';
+}
+.about2-row{
+display: flex;
+margin: 30px 60px;
+gap: 45px;
+}
+
+.about2-col{
+flex-basis: 31%;
+background-color: white;
+text-align: center;
+font-family:'Fraunces';
+padding: 20px;
+}
+.about2 h5{
+    color: brown;
+    font-size: 30px;
+}
+.about2 h2{
+    color: rgb(29, 27, 27);
+    font-weight: 600;
+    font-size: 40px;
+}
+.about2-col p{
+    font-size: 12px;
+}
+.about2-col h4{
+    font-style: 5px;
+    font-weight: 500;
+}
+
+.about3{
+    background-color: white;
+    padding: 40px;
+    text-align: left;
+font-family:'Fraunces';
+
+}
+.about3 h5{
+    color: brown;
+    font-size: 30px;
+    padding:0 0 0 10%;
+
+}
+.about3 h2{
+    color: rgb(29, 27, 27);
+    font-weight: 600;
+    font-size: 35px;
+    padding:0 0 0 10%;
+
+}
+.about3-row{
+    display: flex;
+    justify-content: center;
+    margin:40px 0;
+    gap: 40px;
+}
+.about3-col img{
+    width: 220px;
+    height: 200px;
+}
+.about3-text{
+    background-color: rgb(227, 224, 224);
+    padding: 10px;
+}
+.about3-text h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+.about3-text p{
+    font-size: 13px;
+    padding: 5px 0 10px 0;
+}
+.about4-row{
+    background-color: rgb(247, 244, 244);
+    display: flex;
+    padding: 5px 0 0 50px;
+}
+.about4-col h1{
+    font-size: 50px;
+    color: #571D1E;
+font-family:'Fraunces';
+font-weight: 700px;
+padding: 50px 0 0 0;
+}
+.about4-col img{
+    width: 450px;
+    height: 400px;
+    margin-left: 40%;
+}
+.about4-col button{
+    background-color: #571D1E;
+    color: white;
 }
 
 /* -----------------shop-page-------------- */
@@ -917,61 +991,134 @@ margin-left: 50px;
 
 
 /* -------------------Register-page---------------------------- */
+:root {
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
+
 .sign-up{
     width: 100%;
-	height:120vh;
+	height:170vh;
 	background-image:url(../img/Sign\ Up.png);
 	background-size: cover;
 	background-position: center;
 }
 
+
 .sign-up-container{
     color: rgb(17, 10, 10);
     position: absolute;
     left: 27%;
-    margin:50px 0 0 0;
-    padding: 40px;
+    margin:50px 0 90px 0;
+    padding: 40px 40px 20px 40px;
     background-color: white;
+    width: 550px;
 }
-.sign-up-container h3{
-font-weight: 700;
-font-size: 30px;
-text-align: center;
-font-family:'Fraunces';
-font-variant: small-caps;
+
+/* .container {
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 550px;
+} */
+
+.form {
+    padding: 10px 20px;
 }
-.sign-up-container input{
+
+.form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-family:'Fraunces';
+    font-size: 30px;
+    font-variant: small-caps;   
+}
+
+.form-field {
+    margin-bottom: 5px;
+
+}
+
+.form-field label {
+    display: block;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.form-field input {
+    border: none;
+    border-bottom: solid 2px #f0f0f0;
+    border-radius: 3px;
+    padding: 20px 0;
+    margin:0 0 5px 0;
+    font-size: 14px;
+    display: block;
     width: 100%;
-    padding: 10px 0;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    font-family: 'Fraunces' sans-serif;
 }
+
+.form-field input:focus {
+    outline: none;
+}
+
+.form-field.error input {
+    border-color: var(--error-color);
+}
+
+.form-field.success input {
+    border-color: var(--success-color);
+}
+
+
+.form-field small {
+    color: var(--error-color);
+}
+
+
+/* button */
+.btn {
+    width: 100%;
+    padding: 3%;
+    background: #007bff;
+    border-bottom: 2px solid #007bff;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: #0069d9;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.sign-up-btn{
+    background-color: #571D1E;
+    padding: 10px;
+    border: none;
+    color: white;
+    margin:10% 0 0 70px;
+    font-variant: small-caps;
+}
+
 .flex{
     display: flex;
     padding: 10px 0;
 }
 .flex p{
     color: rgb(67, 65, 65);
-    padding:13px 100px 0 5px;
+    padding:13px 5px 0 5px;
     font-size: 13px;
 }
 .flex input{
     width: auto;
-}
-.sign-up-container button{
-    background-color: #571D1E;
-    padding: 10px;
-    border: none;
-    color: white;
-    margin:10% 0 0 30%;
-    font-variant: small-caps;
-}
-#see{
-    background-image: url(../img/akar-icons_eye-slashed.png);
-    background-repeat: no-repeat;
-    background-position: 95%;
 }
 @media(max-width:480px){
     .sign-up-container{
@@ -979,15 +1126,13 @@ font-variant: small-caps;
         position: absolute;
         left:0;
         margin:50px 15px;
-        padding: 40px;
+        padding: 10px;
         background-color: white;
-    }
-    .sign-up-container button{
-        margin: 15% 0 0 20%;
+        width: 290px;
     }
     .sign-up{
         width: 100%;
-        height:100vh;
+        height:150vh;
         background-image:url(../img/Sign\ Up.png);
         background-size: cover;
         background-position: center;
@@ -1008,11 +1153,16 @@ font-variant: small-caps;
 }
 .other{
     box-shadow: 0 0 20px 0 lightgray;
-    padding:5px 30px;
+    padding:5px 20px;
     margin: 15px 90px;
     cursor: pointer;
 }
-.login h2{
+.other h5{
+    font-size: 12px;
+    color:#571D1E;
+    padding: 0 0 0 15px;
+}
+.form h2{
     color: #571D1Eed;
     text-align: center;
     padding: 20px 0 0 0;

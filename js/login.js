@@ -1,6 +1,3 @@
-
-// --------------password visibility---------------
-
 const seePassword = document.querySelector('#togglePassword');
 
 const password = document.querySelector('#password');
@@ -27,25 +24,25 @@ const confirmPasswordEl = document.querySelector('#confirm-password');
 const form = document.querySelector('#signup');
 
 
-const checkUsername = () => {
+// const checkUsername = () => {
 
-    let valid = false;
+//     let valid = false;
 
-    const min = 3,
-        max = 25;
+//     const min = 3,
+//         max = 25;
 
-    const username = usernameEl.value.trim();
+//     const username = usernameEl.value.trim();
 
-    if (!isRequired(username)) {
-        showError(usernameEl, 'Username cannot be blank.');
-    } else if (!isBetween(username.length, min, max)) {
-        showError(usernameEl, `Username must be between ${min} and ${max} characters.`)
-    } else {
-        showSuccess(usernameEl);
-        valid = true;
-    }
-    return valid;
-};
+//     if (!isRequired(username)) {
+//         showError(usernameEl, 'Username cannot be blank.');
+//     } else if (!isBetween(username.length, min, max)) {
+//         showError(usernameEl, `Username must be between ${min} and ${max} characters.`)
+//     } else {
+//         showSuccess(usernameEl);
+//         valid = true;
+//     }
+//     return valid;
+// };
 
 
 const checkEmail = () => {
@@ -143,21 +140,21 @@ form.addEventListener('submit', function (e) {
     e.preventDefault();
     
     // validate fields
-    let isUsernameValid = checkUsername(),
-        isEmailValid = checkEmail(),
+    let isEmailValid = checkEmail(),
         isPasswordValid = checkPassword();
+    // isUsernameValid = checkUsername(),
         // isConfirmPasswordValid = checkConfirmPassword();
 
-    let isFormValid = isUsernameValid &&
-        isEmailValid &&
+    let isFormValid =   isEmailValid &&
         isPasswordValid;
+        // isUsernameValid &&
         // isConfirmPasswordValid;
 
     // submit to the server if the form is valid
     if (isFormValid) {
-        document.querySelector('.sign-up-btn').addEventListener('click', (e) =>{
+        document.getElementById('login').addEventListener('click', (e) =>{
             e.preventDefault();
-            alert("Thank You For Submitting your details")
+            alert("Welcome! your login details have been submited")
         })
     }
 });
@@ -193,4 +190,3 @@ form.addEventListener('input', debounce(function (e) {
             break;
     }
 }));
-

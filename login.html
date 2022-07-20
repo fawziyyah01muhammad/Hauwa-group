@@ -44,18 +44,28 @@
 <!-- --------------------------section 1-------------------------------------->
 
 <div class="sign-up">
-  <form action="" class="sign-up-container">
-    <div class="login">
-    <h3>LOG IN</h3>
-    <P>Welcome back! please enter your details</P>
-    <span>
-    <input type="email" name="email" placeholder="Your email address" required><br><br>
-    </span>
-    <span style="display: flex;">
-      <input type="password" name="password" placeholder="Password" id="password"/>
-      <i class="fa-regular fa-eye" id="togglePassword"></i>
-    </span>
-        <button type="submit" name="submit">LOGIN</button>
+  <div class="sign-up-container" id="login-con">
+    <form id="signup" class="form">
+      <h1>log in</h1>
+   <div class="form-field">
+          <!-- <label for="email">Email:</label> -->
+          <input type="text" name="email" id="email" placeholder="Your email address" autocomplete="off">
+          <small></small>
+      </div>
+
+      <div class="form-field">
+          <!-- <label for="password">Password:</label> -->
+  <i class="fa-regular fa-eye" id="togglePassword" style="float:right; margin: 15px 0 -45px 0;"></i>
+          <input type="password" name="password" id="password" placeholder="Password" autocomplete="off">
+                <small></small>
+      </div>
+
+      <div class="flex">
+        <input type="checkbox" /> <p> By signing up you accept the terms of service and privacy policy</p><br>
+       </div>
+      <div class="form-field">
+        <input type="submit" value="log in" class="sign-up-btn" id="login">
+      </div>
     <h2>OR</h2>
     <div class="other">
     <div class="flex">
@@ -69,9 +79,9 @@
       <h5>Continue with Facebook</h5>
     </div>
     </div>
+    </form>
     </div>
-  </form>
-</div>
+    </div>
 
 <!-- ----------------foorter-------------- -->
 <div class="sign-footer">
@@ -82,7 +92,7 @@
     </div>
 </div>
 
-  <script src="./js/script.js"></script>
+  <script src="./js/login.js"></script>
   <script src="./js/bootstrap.min.js"></script>
    
     <!---------- JavaScript for toggle Menu ------->
