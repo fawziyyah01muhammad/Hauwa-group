@@ -157,7 +157,7 @@ form.addEventListener('submit', function (e) {
     if (isFormValid) {
         document.querySelector('.sign-up-btn').addEventListener('click', (e) =>{
             e.preventDefault();
-            alert("Thank You For Submitting your details")
+            alert("Thank You For Submitting your details \u{1F60D}")
         })
     }
 });
