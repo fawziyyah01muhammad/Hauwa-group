@@ -11,7 +11,7 @@
     border-radius: 50%;
     color: white;
     font-size: 10px;
-    margin:10% 0 0 0;
+    margin:-40px 0px 10px -8px;
 
 }
 nav{
@@ -64,7 +64,7 @@ a.active::after{
 .nav-icons img{
     padding:0  0 9px 15px;
     margin-left: 10px;
-    border-left: 2px solid gray;
+    margin-top: 15px;
 }
 .label a{
     font-family: 'Recursive' sans-serif;
@@ -116,7 +116,7 @@ a.active::after{
         cursor: pointer; 
     }
 .label img{
-width: 30px;
+display: none;
     }
     .nav-links ul{
         padding: 30px;
@@ -124,6 +124,7 @@ width: 30px;
     .nav-icons img{
         padding: 0;
         border-left: none;
+        margin-top: 13px;
     }
     nav{
         padding: 5px;
@@ -139,7 +140,7 @@ width: 30px;
         width: auto;
         height: 2px;
         background:#4D4B48;
-        display:inline-block;
+        display:none;
     }
 }
 @media screen and (min-width:781px) and (max-width:958px){
@@ -165,6 +166,7 @@ width: 30px;
 	height:120vh;
 	background-image:url(../img/Group\ 280.svg);
 	background-size: cover;
+    background-repeat: no-repeat;
 	background-position: center;
 }
 .stn2{
@@ -201,19 +203,40 @@ font-size: 12px;
 }
 @media(max-width: 480px){
     .text h5{
-        font-size: 40px;
+        font-size: 20px;
+        font-weight: 600;
     }
     .section1{
         width: 100%;
-        height:50vh;
+        height:43vh;
         background-image:url(../img/Group\ 280.svg);
         background-size: cover;
         background-position: center;
     }
+    .stn2{
+        width: 100%;
+        height:43vh;
+        background-image:url(../img/Group\ 643.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .stn3{
+        width: 100%;
+        height:43vh;
+        background-image:url(../img/Group\ 644.svg);
+        background-size: cover;
+        background-position: center;
+    }
+    .text{
+        text-align: left;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        color: white;
+        padding:5px 0 0 10px;
+    }
 }
 /* ------------------------section2------------------------- */
 .section2{
-    padding:3% 47px;
+    padding:3% 23px;
     background-color: #faf4f4;
 }
 .section2-row{
@@ -600,269 +623,6 @@ padding-left: 150px;
         flex-direction: column;
     }
 }
-
-/* ------------------About Us-------------------- */
-.about-body{
-    background: #F6F5F5;
-    text-align: center;
-    padding: 50px;
-    font-family: 'Fraunces';
-}
-.about-body h2{
-font-weight: 900;
-font-size: 40px;
-}
-.about-body p{
-    font-weight: 600px;
-    font-size: 20px;
-}
-.about{
-    background-color: white;
-}
-.about-row{
-    display: flex;
-    margin:50px 80px;
-}
-.about-col{
-    flex-basis: 50%;
-    font-family: 'Fraunces';
-}
-.about-col h2{
-    color: rgb(29, 27, 27);
-    font-weight: 600;
-    font-size: 40px;
-}
-.about-col p{
-    color: rgb(50, 50, 50);
-    font-weight: 300;
-    /* padding: 0px 25px; */
-}
-.about-col h5{
-    color: brown;
-    font-size: 30px;
-    padding: 70px 0 0 0;
-}
-
-.about2{
-    background-color: rgba(181, 127, 127, 0.305);
-    text-align: center;
-    padding: 30px;
-font-family:'Fraunces';
-}
-.about2-row{
-display: flex;
-margin: 30px 60px;
-gap: 45px;
-}
-
-.about2-col{
-flex-basis: 31%;
-background-color: white;
-text-align: center;
-font-family:'Fraunces';
-padding: 20px;
-}
-.about2 h5{
-    color: brown;
-    font-size: 30px;
-}
-.about2 h2{
-    color: rgb(29, 27, 27);
-    font-weight: 600;
-    font-size: 40px;
-}
-.about2-col p{
-    font-size: 12px;
-}
-.about2-col h4{
-    font-style: 5px;
-    font-weight: 500;
-}
-
-.about3{
-    background-color: white;
-    padding: 40px;
-    text-align: left;
-font-family:'Fraunces';
-
-}
-.about3 h5{
-    color: brown;
-    font-size: 30px;
-    padding:0 0 0 10%;
-
-}
-.about3 h2{
-    color: rgb(29, 27, 27);
-    font-weight: 600;
-    font-size: 35px;
-    padding:0 0 0 10%;
-
-}
-.about3-row{
-    display: flex;
-    justify-content: center;
-    margin:40px 0;
-    gap: 40px;
-}
-.about3-col img{
-    width: 220px;
-    height: 200px;
-}
-.about3-text{
-    background-color: rgb(227, 224, 224);
-    padding: 10px;
-}
-.about3-text h3{
-    font-size: 20px;
-    font-weight: 600;
-}
-.about3-text p{
-    font-size: 13px;
-    padding: 5px 0 10px 0;
-}
-.about4-row{
-    background-color: rgb(247, 244, 244);
-    display: flex;
-    padding: 5px 0 0 50px;
-}
-.about4-col h1{
-    font-size: 50px;
-    color: #571D1E;
-font-family:'Fraunces';
-font-weight: 700px;
-padding: 50px 0 0 0;
-}
-.about4-col img{
-    width: 450px;
-    height: 400px;
-    margin-left: 40%;
-}
-.about4-col button{
-    background-color: #571D1E;
-    color: white;
-}
-
-@media(max-width: 601px){
-    .about-body{
-        background: #F6F5F5;
-        text-align: center;
-        padding: 50px 15px;
-        font-family: 'Fraunces';
-    }
-    .about-body h2{
-    font-weight: 900;
-    font-size: 20px;
-    }
-    .about-body p{
-        font-weight: 600px;
-        font-size: 14px;
-    }
-    .about-row{
-        flex-direction: column;
-        margin:50px 25px;
-     }
-     .about2-row{
-        flex-direction: column;
-        margin: 30px 20px;
-     }
-     .about2-col p{
-        font-size: 12px;
-     }
-     .about2-col{
-        padding: 5px;
-     }
-     .about2 h2 {
-        font-size: 24px;
-    }
-     .about2-col h4{
-        font-size: 20px;
-    font-weight: 600;
-}
-     .about3-row{
-        flex-direction: column;
-        gap: 10px;
-     }
-     .about3 h2 {
-        font-size: 35px;
-        padding: 0 0 0 4%;
-    }
-    .about3-col img {
-        width:240px;
-        height: 200px;
-    }
-    .about3-text {
-        background-color: rgb(227, 224, 224);
-        text-align: center;
-        font-size: 30px;
-    }
-     .about4-row{
-        flex-direction: column;
-        padding: 5px 0 0 20px;
-     }
-     .about5-row{
-        flex-direction: column;
-       
-     }
-     .about4-col img{
-        width: 300px;
-        height: 400px;
-        margin: 0 0 0 0px;
-    }
-    .about4-col button {
-        background-color: #571D1E;
-        color: white;
-        width: 50%;
-        border: none;
-    }
-    .about-col img{
-        width: 230px;
-        height: auto;
-    }
-    .about-col h2{
-        font-size: 30px;
-    }
-    .about-col p{
-        font-size: 18px;
-    }
-    .about-col h5{
-        font-size: 30px;
-        padding: 70px 0 0 0;
-    }
-    .cart h2 {
-        font-size: 20px;
-    }
-}
-@media screen and (min-width:602px) and (max-width:958px){
-    .about-row{
-       flex-direction: column;
-    }
-    .about-col h2{
-        font-size: 45px;
-    }
-    .about-col p{
-        font-size: 20px;
-    }
-    .about-col h5{
-        font-size: 40px;
-        padding: 70px 0 0 0;
-    }
-    .about2-row{
-        flex-direction: column;
-    }
-    .about4-col img{
-        width: 450px;
-        height: 400px;
-        margin-left: 0;
-    }
-    .about2-col h4{
-        font-size: 35px;
-        font-weight: 500;
-    }
-    .about2-col p{
-        font-size: 22px;
-    }
-    }
 /* -----------------shop-page-------------- */
 .stage1-row{
     display: flex;
@@ -929,10 +689,11 @@ border-right: 1px solid lightgray;
     background-color: #fcf9fa;
     padding: 30px;
     gap: 10px;
+    margin: 0;
 }
-.item{
+/* .item{
     flex-basis: 20%;
-}
+} */
 .stage2-col{
     flex-basis: 25%;
     font-family: 'Fraunces';
@@ -952,6 +713,7 @@ border-right: 1px solid lightgray;
     font-size: 12px;
     padding: 5px;
     font-variant: small-caps;
+    margin-top: 20px;
 }
 .stage2-col button:hover{
     background-color: #6e2728;
@@ -962,7 +724,14 @@ border-right: 1px solid lightgray;
     padding:10px 15px;
     box-shadow: 0 0 30px 0 lightgray;
     /* height: 390px; */
-
+}
+.s2 a{
+    text-decoration: none;
+    color: black;
+}
+.s1 a{
+    text-decoration: none;
+    color: black;
 }
 .s2 img{
     padding:20px 40px;
@@ -1122,7 +891,8 @@ font-size: 24px;
 }
 
 .g2{
-   height: 180px;
+    width: 400px;
+   height: 200px;
     padding: 0 50px;
 }
 .cart-col button{
@@ -1139,27 +909,109 @@ font-size: 24px;
 .be{
     padding: 70px 40px 40px 22%;
 }
+@media(max-width:480px){
+    .cart h1 {
+        font-weight: 900;
+        font-size: 30px;
+    }
+}
 /* ---------------cart 2----------------------------- */
 .cart2{
     padding: 30px;
 }
 .cart2-row{
-    display: flex;
+    display:flex;
     margin-bottom: 20px;
 }
 .cart2-col2{
     border: 1px solid #6e2728;
     border-left: none;
-    padding:5px 10px 0 25px;
+    padding:0px 10px 0 25px;
+    min-width: 70%;
+}
+.cart2-col2 img{
+    padding: 0;
+    margin: 0;
 }
 .cart2-col-text{
     display: flex;
+    padding: 20px 0px 0;
 }
-.cart2-col-text h5{
-    padding:0 75px 0 10px;
+.cart2-col-text span{
+    padding:0 25px 0 20px;
+    font-size: 25px;
 }
-#bin{
+.cart2-col-text i{
+   text-align: right;
+   float: right;
+   justify-content: right;
+   align-items:right;
+    /* padding-left: 30%; */
+}
+.quantity{
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+.quantity button{
+    border:none;
+    background-color: rgba(241, 238, 238, 0.416);
+    padding: 3px 30px;
+    font-size: 15px;
+    justify-content: right;
     float: right;
+}
+.total{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+.products{
+    width: 100%;
+    font-size: 25px;
+    font-family: 'Fraunces';
+}
+.products span{
+    font-size: 20px;
+}
+.price{
+    font-size: 30px;
+    font-weight: 600;
+}
+.grey-img{
+    background-color: rgba(134, 133, 133, 0.194);
+    height: 95%;
+    padding: 20px;
+}
+.grey-img img{
+    height: 100%;
+}
+.cartTotalContainer{
+    background: rgba(225, 211, 211, 0.8);
+opacity: 0.8;
+padding: 5px 30px;
+color: black;
+}
+.cartTotalContainer h1{
+font-size: 45px;
+font-weight: 600;
+}
+.cartTotalContainer h1 span{
+    text-align: right;
+    float: right;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.CHECK{
+    border: none;
+    padding: 10px 100px;
+    background-color: #411717;
+    color: white;
+    font-variant: small-caps;
+    margin: 30px auto;
 }
 @media(max-width:480px){
     .cart2-row{
@@ -1180,10 +1032,10 @@ font-size: 24px;
     margin: 50px;
     gap: 40px;
 }
-/* .cornflower-col img{
-    width: 400px;
-    height: 550px;
-} */
+.cornflower-col img{
+    width: auto;
+    height: auto;
+}
 .cornflower-col{
     font-family: 'Fraunces';
 }
@@ -1239,9 +1091,65 @@ padding: 70px;
 background-color: rgba(134, 133, 133, 0.194);
 margin-left: 50px;
 } */
-@media(max-width:985px){
+@media screen and (min-width:270px) and (max-width:361px){
+    .cornflower-col img{
+        width: 280px;
+        height: auto;
+    }
     .cornflower-row{
         flex-direction: column;
+        margin: 50px 20px;
+    }
+    .cornflower h2 {
+        font-size: 40px;
+    }
+    .cornflower-col-text1 h1 {
+        font-size: 27px;
+        letter-spacing: 0px;
+    }
+}
+@media screen and (min-width:362px) and (max-width:481px){
+    .cornflower-row{
+        flex-direction: column;
+        margin: 50px 20px;
+    }
+    .cornflower-col img{
+        width: 340px;
+        height: auto;
+    }
+    .cornflower h2 {
+        font-size: 40px;
+    }
+    .cornflower-col-text1 h1 {
+        font-size: 27px;
+        letter-spacing: 0px;
+    }
+}
+@media screen and (min-width:482px) and (max-width:958px){
+    .cornflower-row{
+        flex-direction: column;
+        margin: 50px 20px;
+    }
+    .cornflower-col img{
+        width: auto;
+        height: auto;
+    }
+    .cornflower h2 {
+        font-size: 60px;
+    }
+    .cornflower-col-text1 h1 {
+        font-size: 47px;
+        letter-spacing: 0px;
+    }
+    .cornflower-col-text2 h5 {
+        font-size: 40px;
+    }
+    .cornflower-col-text1 p {
+        font-size: 30px;
+        margin: 0;
+    }
+    .cornflower-col-text2 p{
+        font-size: 30px;
     }
 }
 
@@ -1550,7 +1458,7 @@ textarea{
             background-position: center;
         }
         .form-field input {
-            font-size: 40px;
+            font-size: 20px;
         }
         .flex p{
             color: rgb(67, 65, 65);
@@ -1766,6 +1674,9 @@ letter-spacing: -1px;
     float: none;
     margin:  0 0 0 10%;
 }
+.checkout{
+    background: linear-gradient(116.82deg, rgba(255, 255, 255, 0.6) 0%, rgba(247, 245, 245, 0) 10px);
+}
 }
 @media screen and (min-width:501px) and (max-width:601px){
     .checkout-row{
@@ -1780,10 +1691,10 @@ letter-spacing: -1px;
 }
 }
 
-
-
-
-
+/* font-family: 'Finger Paint';
+font-style: normal;
+font-weight: 400;
+font-size: 36px; */
 
 
 
