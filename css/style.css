@@ -75,7 +75,9 @@ a.active::after{
     text-decoration: none;
 }
 .label img{
-    width: 50px;
+    width:200px;
+    margin: -60px -90px -90px -70px;
+    padding: 0;
         }
     
 .fa-times, .fa-bars{
@@ -117,7 +119,9 @@ a.active::after{
         cursor: pointer; 
     }
 .label img{
-display: none;
+        width:150px;
+        margin: -60px -70px -80px -30px;
+        padding: 0;
     }
     .nav-links ul{
         padding: 30px;
@@ -125,7 +129,7 @@ display: none;
     .nav-icons img{
         padding: 0;
         border-left: none;
-        margin-top: 13px;
+        margin: 13px 15px 0 15px;
     }
     nav{
         padding: 5px;
@@ -143,6 +147,11 @@ display: none;
         background:#4D4B48;
         display:none;
     }
+    .nav-icons a span{
+        margin:-40px 0px 10px -23px;
+    
+    }
+   
 }
 @media screen and (min-width:781px) and (max-width:958px){
     .nav-links ul li a{
@@ -158,7 +167,9 @@ display: none;
     padding: 10px 2%;
     }
     .label img{
-        width: 40px;
+        width:150px;
+        margin: -60px -70px -80px -30px;
+        padding: 0;
             }
 }
 /* ------------section 1------------------------ */
@@ -1313,8 +1324,14 @@ margin-left: 50px;
 	background-size: cover;
 	background-position: center;
 }
-
-
+.sign-up h4{
+    text-align: right;
+    font-family: 'fraunces';
+    padding: 30px 50px 0 0;
+}
+.sign-up h4 a{
+    color:#6e2728;
+}
 .sign-up-container{
     color: rgb(17, 10, 10);
     position: absolute;
@@ -1796,6 +1813,9 @@ letter-spacing: -1px;
     width: 100%;
     opacity: 0;
     transition: 0.5s ease;
+  }
+  .overlay img{
+    margin-bottom: 20px;
   }
 .s1:hover .overlay {
     opacity: 3;

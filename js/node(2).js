@@ -158,6 +158,11 @@
           localStorage.setItem("totalCost", product.price);
       } 
   }
+  var removeProduct = document.getElementsByClassName(".cart2-row")  
+	function hideItem(){
+		removeProduct.style.display = "none";
+        removeProduct.style.cursor = "pointer"
+	}
       function displayCart(){
           let cartItems = localStorage.getItem("prouctsInCart");
           cartItems = JSON.parse(cartItems);
@@ -182,7 +187,7 @@
                   <img src="./img/gg_nametag.png" alt="">
                   <span>${item.name}</span>
                   </div>
-                  <i class="fa-regular fa-trash-can" style="float:right; padding-right: 30px;"></i>
+                  <i class="fa-regular fa-trash-can" style="float:right; padding-right: 30px;" onclick ="hideItem()"></i>
                   
                   <div class="price">Price:N${item.price}.00</div>
                   <img src="./img/ri-star-s-fill.png" alt="">
