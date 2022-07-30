@@ -152,13 +152,12 @@ form.addEventListener('submit', function (e) {
 
     // submit to the server if the form is valid
     if (isFormValid) {
-        document.getElementById('login').addEventListener('click', (e) =>{
+        document.querySelector('.sign-up-btn').addEventListener('click', (e) =>{
             e.preventDefault();
-            alert("Welcome! your login details have been submited")
+            alert("Welcome! your login details have been submited \u{1F60D}")
         })
     }
 });
-
 
 const debounce = (fn, delay = 500) => {
     let timeoutId;
