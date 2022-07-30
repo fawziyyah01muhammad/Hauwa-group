@@ -95,7 +95,7 @@
           totalCost(products[i]);
       })
   }
-  
+  //prevents it from going back to zero on refresh
   function onLoadCartsNumbers(){
       let productNumbers = localStorage.getItem('cartNumbers');
   
@@ -103,7 +103,7 @@
           document.querySelector('.shopping-cart').textContent = productNumbers;
       }
   }
-  
+  //stores the variable in the local storage
   function cartNumbers(product) {
       // console.log("the product clicked is", product);
       let productNumbers = localStorage.getItem('cartNumbers');
@@ -113,6 +113,7 @@
       if( productNumbers ){
           localStorage.setItem('cartNumbers', productNumbers + 1);
       document.querySelector('.shopping-cart').textContent = productNumbers + 1;
+      alert("Product added to cart!  visit your cart page to proceed")
       } else {
   
       localStorage.setItem('cartNumbers', 1);
@@ -158,11 +159,11 @@
           localStorage.setItem("totalCost", product.price);
       } 
   }
-  var removeProduct = document.getElementsByClassName(".cart2-row")  
-	function hideItem(){
-		removeProduct.style.display = "none";
-        removeProduct.style.cursor = "pointer"
-	}
+//   var removeProduct = document.getElementsByClassName(".cart2-row")  
+// 	function hideItem(){
+// 		removeProduct.style.display = "none";
+//         removeProduct.style.cursor = "pointer"
+// 	}
       function displayCart(){
           let cartItems = localStorage.getItem("prouctsInCart");
           cartItems = JSON.parse(cartItems);
@@ -187,7 +188,7 @@
                   <img src="./img/gg_nametag.png" alt="">
                   <span>${item.name}</span>
                   </div>
-                  <i class="fa-regular fa-trash-can" style="float:right; padding-right: 30px;" onclick ="hideItem()"></i>
+                  <i class="fa-regular fa-trash-can" style="float:right; padding-right: 30px;"></i>
                   
                   <div class="price">Price:N${item.price}.00</div>
                   <img src="./img/ri-star-s-fill.png" alt="">
